@@ -15,8 +15,6 @@ $typeOfPHPExecution = php_sapi_name();
 //check to see if it is a command line execution
 if ($typeOfPHPExecution == 'cli'){
     if (count($argv) != 5 && count($argv) != 6){
-        print_r($argv);
-        print_r(count($argv));
         die("Run the installer in the the directory in which you wish to install Wordpress. For <optional_version> leave black for latest version or please enter the full official number from https://wordpress.org/download/releases/ (e.g. \"5.3.2\")
             Usage: installer.php db_name db_user db_pass db_host <optional_version>\n
             ");
